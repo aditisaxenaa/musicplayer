@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- container holding whole -->
+    <div id="container">
+        <!-- left part of music player -->
+        <div id="left">
+            <!-- left above part -->
+            <div class="songinfo blur-effect">
+                <!-- <div class="songname">
+                    Song Name
+                </div> -->
+                Singer -
+                <div class="artistname">
+                    Artist Name
+                </div>
+            </div>
+            <!-- current song div -->
+            <div class="currentSong">
+            <div class="playingimg"></div>
+            <div class="songname">
+              songname
+            </div>
+            <div class="currentTime"></div>
+            <div class="durationTime"></div>
+
+            <input type="range" id="progress-bar" min="0" max="" value="0" onchange="changeProgressBar()" />
+
+
+            <div class="btns">
+                <i id="back" class="ri-skip-back-mini-fill"></i>
+                <i id="playbtn" class="ri-play-fill"></i>
+                <i id="pausebtn" class="ri-pause-fill"></i>
+                <i id="frwrdBtn" class="ri-skip-forward-mini-fill"></i>
+            </div>
+        </div>
+
+        </div>
+
+        <!-- right song list -->
+        <div id="right">  
+            <div class="heading">
+                <h2>Songs Playlist</h2>
+                <div class="line"></div>
+            </div>
+       <!-- div containing playlists -->
+            <div class="songplaylist">
+                
+               
+
+     
+            </div>
+
+    </div>
+    <audio data-name="PlayDate" data-singer="Melanie" src="play date.mp3"></audio>
+    <audio data-name="Wrapme" data-singer="Some girl" src="wrap me in plastic.mp3"></audio>
+    <audio data-name="Dancing" data-singer="Some guy" src="dancing in my room.mp3"></audio>
+    <audio data-name="Playdate" data-singer="Melanie" src="play date.mp3"></audio>
+    <audio data-name="Wrapme" data-singer="Some girl" src="wrap me in plastic.mp3"></audio>
+    <audio data-name="Dancing" data-singer="Some guy" src="dancing in my room.mp3"></audio>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
