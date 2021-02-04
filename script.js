@@ -83,11 +83,11 @@ pausebutton.addEventListener('click', function(){
 function updateProgressValue() {
      progressBar.max = clickedSong.duration;
      progressBar.value = clickedSong.currentTime;
-     document.querySelector('.currentTime').innerHTML = (formatTime(Math.floor(song.currentTime)));
+     document.querySelector('.currentTime').innerHTML = (formatTime(Math.floor(clickedSong.currentTime)));
      if (document.querySelector('.durationTime').innerHTML === "NaN:NaN") {
          document.querySelector('.durationTime').innerHTML = "0:00";
      } else {
-         document.querySelector('.durationTime').innerHTML = (formatTime(Math.floor(song.duration)));
+         document.querySelector('.durationTime').innerHTML = (formatTime(Math.floor(clickedSong.duration)));
      }
  };
  
